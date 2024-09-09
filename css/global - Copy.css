@@ -1,0 +1,3043 @@
+/*!
+Theme Name: Finance That
+Theme URI: Finance That
+Author: Ecoligix
+Author URI: 
+Description:
+Version: 1.0.0
+Text Domain: Finance That
+*/
+
+/*--------------------------------------------------------------
+>>> TABLE OF CONTENTS:
+----------------------------------------------------------------
+# Fonts Generator
+#   ## Typography
+# Header Top Content
+# Header Navigation
+	## Links
+	## Menus
+--------------------------------------------------------------*/
+
+
+/*--------------------------------------------------------------
+# Fonts Generator and Typography
+--------------------------------------------------------------*/
+
+@font-face {
+    font-family: 'basis_grotesque_proregular';
+    src: url('../fonts/basisgrotesquepro-regular-webfont.woff2') format('woff2'),
+         url('../fonts/basisgrotesquepro-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+@font-face {
+    font-family: 'basis_grotesque_prolight';
+    src: url('../fonts/basisgrotesquepro-light-webfont.woff2') format('woff2'),
+         url('../fonts/basisgrotesquepro-light-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+@font-face {
+    font-family: 'basis_grotesque_probold';
+    src: url('../fonts/basisgrotesquepro-bold-webfont.woff2') format('woff2'),
+         url('../fonts/basisgrotesquepro-bold-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+@font-face {
+    font-family: 'freightdispproblauploadedfile';
+    src: url('../fonts/freightdisp_pro_black-webfont.woff2') format('woff2'),
+         url('../fonts/freightdisp_pro_black-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+body{
+	margin: 0 auto;
+	padding: 0;
+	background: #ffffff;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+
+/*--------------------------------------------------------------
+# Fonts Generator and Typography
+--------------------------------------------------------------*/
+
+
+/*--------------------------------------------------------------
+# Section Header Navigation Css3 Start
+--------------------------------------------------------------*/
+
+.SectionHeader{
+	margin: 0;
+	padding: 10px 0;
+	background: #ffffff;
+	box-shadow: 0px 20px 60px rgba(38, 47, 86, 0.04);
+}
+.WebLogo{
+	margin: 0;
+	padding: 0;
+}
+.WebLogo img{
+	margin: 0;
+	padding: 0;
+	max-width: 100%;
+	height: auto;
+}
+.UserDropdown{
+	margin: 0;
+	padding: 0;
+	float: right;
+}
+.profile-dropdown {
+    display: inline-block;
+    position: relative;
+    background: none;
+    margin: auto;
+    font-weight: normal;
+    font-size: 16px;
+    border-radius: 0;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+.profile-dropdown * {
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+.profile-dropdown input[type="checkbox"] {
+    display: none;
+}
+.profile-dropdown input[type="checkbox"]:checked ~ ul {
+    display: block;
+    animation: pulse 0.5s;
+}
+.profile-dropdown input[type="checkbox"]:checked ~ img {
+    background: none;
+}
+.profile-dropdown input[type="checkbox"]:checked ~ label {
+    background: none;
+}
+.profile-dropdown input[type="checkbox"]:checked ~ label i {
+    color: #FB5100;
+}
+.profile-dropdown input[type="checkbox"]:checked ~ label:after {
+    content: '';
+  	position: absolute;
+  	top: 100%;
+  	right: calc(50% - 10px);
+  	display: block;
+  	border-style: solid;
+  	border-width: 7px 10px 0 10px;
+  	border-color: #FB5100 transparent transparent transparent;
+  	width: 0;
+  	height: 0;
+}
+.profile-dropdown img {
+    display: inline-block;
+    background: #d9d9d9;
+    height: 2.5rem;
+    vertical-align: middle;
+    margin-right: 1rem;
+    margin: 0.5rem 0.75rem 0.5rem 0.5rem;
+    border-radius: 50%;
+}
+.profile-dropdown span {
+    display: inline-block;
+    vertical-align: sub;
+    width: 125px;
+    margin-right: 2rem;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+.profile-dropdown ul {
+    display: none;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    background: #fff;
+    position: absolute;
+    top: 100%;
+    right: 0px;
+	z-index: 99;
+    width: 200px;
+    border-radius: 0px;
+    border: 1px solid #E6E6E6;
+}
+.profile-dropdown ul li{
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	line-height: 20px;
+}
+.profile-dropdown ul li a {
+    display: block;
+    padding: 10px 15px;
+    text-decoration: none;
+    color: #121214;
+    font-size: 16px;
+    font-family: 'basis_grotesque_proregular';
+	-webkit-transition: all ease-in 0.3s;
+    -moz-transition: all ease-in 0.3s;
+    -o-transition: all ease-in 0.3s;
+    transition: all ease-in 0.3s;
+}
+.profile-dropdown ul li a i {
+    font-size: 15px;
+    vertical-align: middle;
+    margin: 0;
+    padding: 0 8px 0 0px;
+    position: relative;
+    top: -3px;
+}
+.profile-dropdown ul li a:hover {
+    background: #FB5100;
+	color: #FFFFFF;
+}
+.profile-dropdown ul li:first-child a:hover {
+    border-radius: 0;
+}
+.profile-dropdown ul li:last-child a:hover {
+    border-radius: 0;
+}
+.profile-dropdown > label {
+    position: relative;
+    height: auto;
+    display: block;
+    text-decoration: none;
+    background: none;
+    color: #333;
+    box-sizing: border-box;
+    float: right;
+    border-radius: 0;
+    margin: 0;
+    padding: 0;
+}
+.profile-dropdown > label i {
+    color: #3F2355;
+    font-size: 30px;
+    margin: 0;
+    padding: 0;
+    line-height: 50px;
+}
+.profile-dropdown:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+.Header-AddPost{
+	margin: 10px 15px 0 0;
+	padding: 0;
+	float: right;
+}
+.Header-AddPost button{
+	margin: 0 0 0 6px;
+    padding: 6px 18px;
+    background: none;
+    border-radius: 5px;
+    border: 2px solid #FB5100;
+    outline: none;
+    font-family: 'basis_grotesque_probold';
+    font-size: 15px;
+    text-align: center;
+    text-decoration: none;
+    color: #FB5100;
+    display: inline-block;
+    -webkit-transition: all ease-in 0.3s;
+    -moz-transition: all ease-in 0.3s;
+    -o-transition: all ease-in 0.3s;
+    transition: all ease-in 0.3s;
+}
+.Header-AddPost button:hover,
+.Header-AddPost button.active{
+	background: #FB5100;
+	border: 2px solid #FB5100;
+	color: #fff;
+}
+.SignUp-Head{
+	margin: 15px 27px 0 27px;
+	padding: 0;
+	float: right;
+}
+.SignUp-Head a{
+	margin: 0;
+	padding: 0;
+	font-family: 'basis_grotesque_probold';
+    font-size: 15px;
+    text-align: left;
+    text-decoration: none;
+	color: #FB5100;
+	outline: none;
+	display: inline-block;
+	-webkit-transition: all ease-in 0.3s;
+    -moz-transition: all ease-in 0.3s;
+    -o-transition: all ease-in 0.3s;
+    transition: all ease-in 0.3s;
+}
+.SignUp-Head span{
+	margin: 0;
+	padding: 0;
+	font-family: 'basis_grotesque_probold';
+    font-size: 15px;
+    text-align: left;
+    text-decoration: none;
+	color: #3F2355;
+	outline: none;
+	display: inline-block;
+}
+.SignUp-Head a:hover,
+.SignUp-Head a:focus,
+.SignUp-Head a:active{
+	color: #3F2355;
+}
+.MenuNav-List{
+	margin: 0;
+	padding: 0;
+	float: right;
+}
+.navbar-expand-lg .navbar-nav .nav-link {
+    padding-right: 13px;
+    padding-left: 13px;
+}
+.navbar-light .navbar-nav .nav-link {
+    color: #3F2355;
+    font-family: 'basis_grotesque_probold';
+    font-size: 15px;
+    text-align: left;
+    text-decoration: none;
+	outline: none;
+	-webkit-transition: all ease-in 0.3s;
+    -moz-transition: all ease-in 0.3s;
+    -o-transition: all ease-in 0.3s;
+    transition: all ease-in 0.3s;
+}
+.navbar-light .navbar-nav .nav-link:focus, 
+.navbar-light .navbar-nav .nav-link:hover {
+    color: #FB5100;
+}
+.navbar-light .navbar-nav .active>.nav-link,
+.navbar-light .navbar-nav .nav-link.active, 
+.navbar-light .navbar-nav .nav-link.show, 
+.navbar-light .navbar-nav .show>.nav-link {
+    color: #FB5100;
+}
+
+
+/*--------------------------------------------------------------
+# Section Header Navigation Css3 End
+--------------------------------------------------------------*/
+
+
+/*--------------------------------------------------------------
+# Section Banner Css3 Start
+--------------------------------------------------------------*/
+
+.SectionBanner{
+	margin: 0;
+	padding: 0 0 215px 0;
+	background: url(../image/banner.png) no-repeat center top;
+}
+.NavBanner-Head{
+	margin: 0;
+	padding: 117px 0 40px 0;
+}
+.NavBanner-Head h1{
+	margin: 0;
+	padding: 0;
+	font-family: 'freightdispproblauploadedfile';
+	font-size: 60px;
+	text-align: center;
+	text-decoration: none;
+	color: #3F2355;
+	line-height: 70px;
+}
+.SearchFilter-Container{
+	margin: 0;
+	padding: 0;
+	background: #FFFFFF;
+	border: 0.5px solid #FFFFFF;
+	box-sizing: border-box;
+	box-shadow: 7.43px 17.03px 60px rgba(108, 126, 147, 0.2);
+	border-radius: 5px;
+	height: 90px;
+}
+.SearchFilter-form{
+	margin: 0;
+	padding: 0;
+	position: relative;
+}
+.SearchFilter-form input,
+.SearchFilter-form select{
+	margin: 0;
+	padding: 0 10px 0 30px;
+	background: #fff;
+	border: none;
+	border-radius: 0;
+	outline: none;
+	font-family: 'basis_grotesque_proregular';
+	font-weight: 500;
+	font-size: 18px;
+	color: #3F2355;
+	text-align: left;
+	text-decoration: none;
+	width: 100%;
+	height: 88px;
+}
+.SearchFilter-form input::placeholder,
+.AddLocation-Form input::placeholder{
+	color: #3F2355;
+}
+.SearchFilter-form::after{
+	content: '';
+    width: 1px;
+    height: 60px;
+    background: #D8D7D7;
+    border-radius: 6px;
+    position: absolute;
+    right: 0;
+    top: 15px;
+    z-index: 99;
+}
+.SearchFilter-form select{
+	padding: 0 10px 0 20px;
+	-webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+}
+.SearchFilter-form i{
+	color: #A3A3A3;
+    font-size: 8px;
+    position: absolute;
+    right: 110px;
+    top: 40px;
+    z-index: 99;
+}
+.AddLocation-Form{
+	margin: 0;
+	padding: 0;
+	position: relative;
+}
+.AddLocation-Form i{
+	color: #A3A3A3;
+    font-size: 24px;
+    position: absolute;
+    left: 0;
+    top: 34px;
+    z-index: 99;
+}
+.AddLocation-Form input{
+	margin: 0;
+	padding: 0 0px 0 30px;
+	background: #fff;
+	border: none;
+	border-radius: 0;
+	outline: none;
+	font-family: 'basis_grotesque_proregular';
+	font-weight: 500;
+	font-size: 18px;
+	color: #3F2355;
+	text-align: left;
+	text-decoration: none;
+	width: 100%;
+	height: 88px;
+}
+.AddLocation-Form button{
+	margin: 0;
+    padding: 8px 20px;
+    background: #FB5100;
+    border-radius: 6px;
+    border: none;
+    outline: none;
+    font-family: 'basis_grotesque_probold';
+    font-weight: bold;
+    font-size: 18px;
+    text-align: center;
+    text-decoration: none;
+    color: #FFFFFF;
+    position: absolute;
+    right: 20px;
+    top: 24px;
+    -webkit-transition: all ease-in 0.3s;
+    -moz-transition: all ease-in 0.3s;
+    -o-transition: all ease-in 0.3s;
+    transition: all ease-in 0.3s;
+}
+.AddLocation-Form button::before{
+	color: #fff;
+	font-size: 20px;
+	text-align: left;
+	content: '\e810';
+	font-family: 'fontello';
+	margin: 0 8px 0 0px;
+}
+.AddLocation-Form button:hover{
+	background: #3F2355;
+}
+.ShowFilter-Head{
+	margin: 15px 30px 0 0px;
+	padding: 0;
+	float: right;
+}
+.ShowFilter-Head a{
+	margin: 0;
+	padding: 0;
+	font-family: 'basis_grotesque_probold';
+    font-weight: bold;
+    font-size: 14px;
+	text-align: right;
+	text-decoration: none;
+	color: #3F2355;
+	outline: none;
+}
+.ShowFilter-Head a i{
+	color: #3F2355;
+	font-size: 8px;
+}
+
+
+/*--------------------------------------------------------------
+# Section Banner Css3 End
+--------------------------------------------------------------*/
+
+
+/*--------------------------------------------------------------
+# Section Feature Listing Tabs Css3 Start
+--------------------------------------------------------------*/
+
+.Section-FeatureList{
+	margin: 0;
+	padding: 100px 0;
+}
+.nav-tabs {
+    border-bottom: 1px solid #D1D3D6;
+}
+.tabs{
+	background: none;
+    color: #eee;
+}
+.tabs h6.section-title{
+    color: #eee;
+}
+.tabs .nav-tabs .nav-item.show .nav-link, .nav-tabs .nav-link.active {
+    color: #FB5100;
+    background-color: transparent;
+    border-color: transparent transparent #FB5100;
+    border-bottom: 2px solid #FB5100 !important;
+    font-size: 20px;
+    font-weight: bold;
+}
+.tabs .nav-tabs .nav-link,
+.nav-tabs .nav-link{
+    border: none;
+    border-top-left-radius: 0rem;
+    border-top-right-radius: 0rem;
+    color: #3F2355;
+    font-size: 20px;
+	font-family: 'basis_grotesque_proregular';
+}
+.nav-tabs .nav-link {
+    border: none;
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+}
+.nav-link {
+    display: block;
+    padding: 10px 20px;
+}
+.nav-tabs .nav-link:focus,
+.nav-tabs .nav-link:hover {
+    border: none;
+}
+.Slider-FeatureList{
+	margin: 0;
+	padding: 0;
+}
+.FeatureList-Thum{
+	margin: 50px 0 0 0;
+	padding: 0;
+	background: #fff;
+	border-radius: 16px;
+	overflow: hidden;
+	border: 0.5px solid #E6E6E6;
+}
+.FeatureList-Thum img{
+	margin: 0;
+	padding: 0;
+	max-width: 100%;
+	height: auto;
+}
+.FeatureList-Thum h1{
+	margin: 0;
+	padding: 10px 0 0 15px;
+	font-family: 'basis_grotesque_probold';
+	font-size: 20px;
+	font-weight: bold;
+	text-align: left;
+	text-decoration: none;
+	color: #3F2355;
+}
+.FeatureList-Thum h1::before{
+	content: '\e819';
+    font-family: 'fontello';
+    color: #FB5100;
+    text-align: left;
+    display: inline-block;
+    line-height: 25px;
+    font-size: 24px;
+    font-weight: 500;
+	
+}
+.FeatureList-Thum h2{
+	margin: 0;
+    padding: 10px 0 15px 14px;
+    font-family: 'basis_grotesque_proregular';
+    font-size: 16px;
+    text-align: left;
+    text-decoration: none;
+    color: #3F2355;
+    display: inline-block;
+    line-height: 20px;
+}
+.FeatureList-Thum h2 span{
+	color: #AAABAD;
+    float: right;
+    margin-left: 16px;
+}
+.FeatureList-Thum h3{
+	margin: 0;
+	padding: 0 0 8px 15px;
+	font-family: 'basis_grotesque_proregular';
+	font-size: 16px;
+	color: #5B5B5C;
+	text-align: left;
+	text-decoration: none;
+}
+.FeatureList-Thum h3 i{
+	color: #3F2355;
+    font-size: 18px;
+    margin-right: 6px;
+    background: #E6E6E6;
+    height: 30px;
+    width: 30px;
+    text-align: center;
+    line-height: 30px;
+    border-radius: 30px;
+}
+.owl-theme .owl-dots .owl-dot span {
+    width: 10px;
+    height: 10px;
+    margin: 5px 5px;
+    background: #F9D9CC;
+    display: block;
+    -webkit-backface-visibility: visible;
+    transition: opacity 200ms ease;
+    border-radius: 30px;
+}
+.owl-theme .owl-dots .owl-dot.active span, 
+.owl-theme .owl-dots .owl-dot:hover span {
+    background: #FB5100;
+	width: 14px;
+    height: 14px;
+}
+.owl-theme .owl-nav{
+	position: absolute;
+    right: 0;
+    bottom: -70px;
+    z-index: 99;
+}
+.owl-theme .owl-nav .owl-prev i,
+.owl-theme .owl-nav .owl-next i{
+	color: #FB5100;
+	font-size: 30px;
+	background: none;
+	outline: none;
+	margin-left: 10px;
+}
+.owl-theme .owl-nav [class*='owl-']:hover {
+    background: none;
+    color: #FFF;
+    text-decoration: none;
+    outline: none;
+}
+.owl-theme .owl-dots {
+    text-align: center;
+    -webkit-tap-highlight-color: transparent;
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: -60px;
+}
+
+
+/*--------------------------------------------------------------
+# Section Feature Listing Tabs Css3 End
+--------------------------------------------------------------*/
+
+
+/*--------------------------------------------------------------
+# Section Buy and Sell Css3 Start
+--------------------------------------------------------------*/
+
+.Section-BuySell{
+	margin: 0;
+	padding: 100px 0;
+}
+.BuySell-Head{
+	margin: 0;
+	padding: 0;
+}
+.BuySell-Head h1{
+	margin: 0;
+	padding: 0 0 10px 0;
+	font-family: 'basis_grotesque_proregular';
+	font-size: 24px;
+	color: #3F2355;
+	text-align: center;
+	text-decoration: none;
+	letter-spacing: 1px;
+}
+.BuySell-Head h2{
+	margin: 0;
+	padding: 0;
+	font-family: 'freightdispproblauploadedfile';
+	font-size: 46px;
+	color: #3F2355;
+	text-align: center;
+	text-decoration: none;
+	line-height: 50px;
+}
+.BuySell-Head img{
+	margin: 70px 0 0 0;
+	padding: 0;
+	max-width: 100%;
+	height: auto;
+}
+
+
+/*--------------------------------------------------------------
+# Section Buy and Sell Css3 End
+--------------------------------------------------------------*/
+
+
+/*--------------------------------------------------------------
+# Section Why Finance Css3 Start
+--------------------------------------------------------------*/
+
+.Section-whyfinance{
+	margin: 0;
+	padding: 70px 0;
+	background: #FBFBFB;
+}
+.whyfinance-Head{
+	margin: 0;
+	padding: 0 0 40px 0;
+}
+.whyfinance-Head h1{
+	margin: 0;
+	padding: 0;
+	font-family: 'freightdispproblauploadedfile';
+	font-size: 42px;
+	color: #3F2355;
+	text-align: center;
+	text-decoration: none;
+	line-height: 52px;
+}
+.SellerVerify-Service{
+	margin: 70px 0 0 0;
+	padding: 50px 0;
+	background: #fff;
+	border-radius: 10px;
+	-webkit-transition: all ease-in 0.3s;
+    -moz-transition: all ease-in 0.3s;
+    -o-transition: all ease-in 0.3s;
+    transition: all ease-in 0.3s;
+}
+.SellerVerify-Service .VerifyIcon{
+	margin: 0 auto;
+	padding: 0;
+	background: #fff;
+	border-radius: 50px;
+	box-shadow: 0px 25px 36px rgba(48, 51, 60, 0.05);
+	height: 100px;
+	width: 100px;
+	text-align: center;
+}
+.SellerVerify-Service .VerifyIcon img{
+	margin: 32px 0 0 0;
+	padding: 0;
+	max-width: 100%;
+	height: auto;
+}
+.SellerVerify-Service .VerifyHead{
+	margin: 0 auto;
+	padding: 30px 0 0 0;
+	text-align: center;
+}
+.SellerVerify-Service .VerifyHead h3{
+	margin: 0;
+	padding: 0;
+	font-family: 'basis_grotesque_probold';
+	font-size: 22px;
+	text-align: center;
+	text-decoration: none;
+	color: #233253;
+	line-height: 30px;
+}
+.SellerVerify-Service .VerifyHead p{
+	margin: 0;
+	padding: 20px 0;
+	font-family: 'basis_grotesque_proregular';
+	font-size: 16px;
+	text-align: center;
+	text-decoration: none;
+	color: #233253;
+	line-height: 20px;
+}
+.SellerVerify-Service .VerifyHead a{
+	margin: 0;
+	padding: 0;
+	font-family: 'basis_grotesque_probold';
+	font-size: 16px;
+	text-align: center;
+	text-decoration: none;
+	color: #FB5100;
+	line-height: 20px;
+}
+.SellerVerify-Service:hover{
+	box-shadow: 30px 50px 100px rgba(189, 171, 144, 0.19);
+}
+.Section-whyfinance .nav-tabs .nav-link{
+	padding: 10px 30px;
+}
+
+
+/*--------------------------------------------------------------
+# Section Why Finance Css3 End
+--------------------------------------------------------------*/
+
+
+/*--------------------------------------------------------------
+# Section Browse Type Css3 Start
+--------------------------------------------------------------*/
+
+.Section-browsetype{
+	margin: 0;
+	padding: 100px 0;
+}
+.browsetype-Head{
+	margin: 0;
+	padding: 0;
+}
+.browsetype-Head h1{
+	margin: 0;
+    padding: 0 0 60px 0;
+    font-family: 'freightdispproblauploadedfile';
+    font-size: 42px;
+    color: #3F2355;
+    text-align: left;
+    text-decoration: none;
+    line-height: 52px;
+}
+.BrowseType-Service{
+	margin: 0 20px 0 0px;
+    padding: 0;
+    width: 12%;
+    height: 135px;
+    float: left;
+    text-align: center;
+    background: #FFFFFF;
+    border: 2px solid #E6E6E6;
+    border-radius: 50%;
+    -webkit-transition: all ease-in 0.3s;
+    -moz-transition: all ease-in 0.3s;
+    -o-transition: all ease-in 0.3s;
+    transition: all ease-in 0.3s;
+}
+.BrowseType-Service img{
+	margin: 0;
+    padding: 25px 0 0 0;
+    max-width: 100%;
+    height: auto;
+    width: 50px;
+}
+.BrowseType-Service h3{
+	margin: 0;
+	padding: 12px 0 0 0;
+	font-family: 'basis_grotesque_probold';
+	font-weight: bold;
+	font-size: 17px;
+	text-align: center;
+	text-decoration: none;
+	color: #3F2355;
+	line-height: 20px;
+}
+.BrowseType-Service:hover{
+	box-shadow: 20px 60px 100px rgba(18, 47, 66, 0.08);
+	border: 2px solid #fff;
+}
+
+
+/*--------------------------------------------------------------
+# Section Browse Type Css3 End
+--------------------------------------------------------------*/
+
+
+/*--------------------------------------------------------------
+# Section Sell vehicle Css3 Start
+--------------------------------------------------------------*/
+
+.Section-SellVehicle{
+	margin: 0;
+	padding: 100px 0;
+	background: url(../image/sell-image-bg.svg) no-repeat center top;
+	background-size: cover;
+}
+.SellVehicle-Head{
+	margin: 0;
+	padding: 0;
+}
+.SellVehicle-Head h5{
+	margin: 0;
+    padding: 0 0 30px 0;
+    font-family: 'freightdispproblauploadedfile';
+    font-size: 42px;
+    color: #3F2355;
+    text-align: center;
+    text-decoration: none;
+    line-height: 52px;
+}
+.VehicleToday-Container{
+	margin: 0;
+    padding: 25px 0;
+    background: rgba(255, 255, 255, 0.4);
+    border-radius: 10px;
+}
+.VehicleToday-Head{
+	margin: 0;
+	padding: 0 0 0 30px;
+}
+.VehicleToday-Head img{
+	margin: 0;
+	padding: 0;
+	max-width: 100%;
+	height: auto;
+	display: inline-block;
+	width: 35px;
+}
+.VehicleToday-Head h6{
+	margin: 0;
+    padding: 0;
+    font-family: 'basis_grotesque_probold';
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 30px;
+    color: #3F2355;
+    text-align: left;
+    text-decoration: none;
+    display: inline-block;
+    position: relative;
+    top: 4px;
+    left: 5px;
+}
+.VehicleToday-Btn{
+	margin: 50px auto 0 auto;
+	padding: 0;
+	text-align: center;
+}
+.VehicleToday-Btn button{
+	margin: 0;
+    padding: 10px 50px;
+    background: #FB5100;
+    border: 1px solid #FB5100;
+    box-sizing: border-box;
+    border-radius: 5px;
+    outline: none;
+    font-family: 'basis_grotesque_probold';
+    font-size: 20px;
+    text-align: center;
+    text-decoration: none;
+    color: #fff;
+	-webkit-transition: all ease-in 0.3s;
+    -moz-transition: all ease-in 0.3s;
+    -o-transition: all ease-in 0.3s;
+    transition: all ease-in 0.3s;
+}
+.VehicleToday-Btn button:hover{
+	background: #3F2355;
+	border: 1px solid #3F2355;
+}
+
+
+
+/*--------------------------------------------------------------
+# Section Sell vehicle Css3 End
+--------------------------------------------------------------*/
+
+
+/*--------------------------------------------------------------
+# Section Footer Css3 Start
+--------------------------------------------------------------*/
+
+.Section-Footer{
+	margin: 0;
+	padding: 100px 0;
+	background: #3F2355;
+}
+.FooterLogo{
+	margin: 0;
+	padding: 0;
+}
+.FooterLogo img{
+	margin: 0;
+	padding: 0;
+	max-width: 100%;
+	height: auto;
+	width: 285px;
+}
+.Contact-fLinks{
+	margin: 30px 0 0 0;
+	padding: 0;
+}
+.Contact-fLinks ul{
+	margin: 0;
+	padding: 0;
+}
+.Contact-fLinks ul li{
+	margin: 0 20px 0 0px;
+	padding: 0;
+	list-style: none;
+	float: left;
+}
+.Contact-fLinks ul li h1,
+.Contact-fLinks ul li a{
+	margin: 0;
+	padding: 0;
+	color: #FFFFFF;
+	font-family: 'basis_grotesque_probold';
+	font-size: 16px;
+	line-height: 21px;
+	text-align: left;
+	text-decoration: none;
+}
+.Contact-fLinks ul li h1 i,
+.Contact-fLinks ul li a i{
+	margin: 0 10px 0 0px;
+    padding: 6px 5px;
+    color: #FFFFFF;
+    font-size: 25px;
+    text-align: center;
+    background: rgba(249,217,204,0.1);
+    border-radius: 50%;
+}
+.DownloadApp-Head{
+	margin: 30px 0 0 0;
+	padding: 0;
+	display: inline-block;
+}
+.DownloadApp-Head img{
+	margin: 0 25px 0 0px;
+    padding: 0;
+    max-width: 100%;
+    height: auto;
+    display: inline-block;
+    width: 160px;
+}
+.SocialMedia-Icon{
+	margin: 30px 0 0 0;
+	padding: 0;
+}
+.SocialMedia-Icon ul{
+	margin: 0;
+	padding: 0;
+}
+.SocialMedia-Icon ul li{
+	margin: 0 5px 0 0px;
+	padding: 0;
+	list-style: none;
+	display: inline-block;
+}
+.SocialMedia-Icon ul li i{
+	margin: 0;
+	padding: 0;
+	color: #FFFFFF;
+	font-size: 25px;
+	text-align: left;
+	line-height: 0;
+	-webkit-transition: all ease-in 0.3s;
+    -moz-transition: all ease-in 0.3s;
+    -o-transition: all ease-in 0.3s;
+    transition: all ease-in 0.3s;
+}
+.SocialMedia-Icon ul li i:hover{
+	color: #FB5100;
+}
+.footerlinks{
+	margin: 0;
+	padding: 0;
+	width: 25%;
+	float: left;
+}
+.footerlinks h3{
+	margin: 0 0 40px 0;
+	padding: 0;
+	color: #FFFFFF;
+	font-family: 'basis_grotesque_probold';
+	font-size: 22px;
+	text-align: left;
+	text-decoration: none;
+}
+.footerlinks ul{
+	margin: 0;
+	padding: 0;
+}
+.footerlinks ul li{
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	line-height: 35px;
+}
+.footerlinks ul li a{
+	margin: 0;
+	padding: 0;
+	font-family: 'basis_grotesque_proregular';
+	font-size: 16px;
+	text-align: left;
+	text-decoration: none;
+	color: #FFFFFF;
+	outline: none;
+	-webkit-transition: all ease-in 0.3s;
+    -moz-transition: all ease-in 0.3s;
+    -o-transition: all ease-in 0.3s;
+    transition: all ease-in 0.3s;
+}
+.footerlinks ul li a:hover,
+.footerlinks ul li a:focus{
+	color: #FB5100;
+}
+
+
+/*--------------------------------------------------------------
+# Section Footer Css3 End
+--------------------------------------------------------------*/
+
+
+/*--------------------------------------------------------------
+# Listing Page Css3 Start
+--------------------------------------------------------------*/
+
+.Section-ListandGrid{
+	margin: 0;
+	padding: 100px 0 0 0;
+}
+.ListSearch-Container{
+	margin: 0 0 30px 0;
+	padding: 0 5px 0 5px;
+	background: #F8F8F8;
+	border: 0.2px solid #3F2355;
+	border-radius: 5px;
+}
+.ListSearch-Form{
+	margin: 0;
+	padding: 0;
+	position: relative;
+}
+.ListSearch-Form input,
+.ListSearch-Form select{
+	margin: 0;
+	padding: 0 15px 0 30px;
+	background: #F8F8F8;
+	border-radius: 0;
+	border: none;
+	outline: none;
+	font-family: 'basis_grotesque_proregular';
+	font-size: 18px;
+	color: #3F2355;
+	text-align: left;
+	text-decoration: none;
+	height: 90px;
+	width: 100%;
+}
+.ListSearch-Form::after{
+	content: '';
+	background: #D8D7D7;
+	border-radius: 6px;
+	height: 60px;
+	width: 1px;
+	position: absolute;
+	right: 0;
+	top: 16px;
+	z-index: 99;
+}
+.ListSearch-Form input::placeholder,
+.ListLocation-Form input::placeholder{
+	color: #3F2355;
+}
+.ListSearch-Form select{
+	-webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+}
+.ListSearch-Form span{
+	color: #A3A3A3;
+    font-size: 8px;
+    position: absolute;
+    right: 20px;
+    top: 40px;
+    z-index: 99;
+}
+.ListLocation-Form{
+	margin: 0;
+	padding: 0;
+	position: relative;
+}
+.ListLocation-Form input{
+	margin: 0;
+	padding: 0 15px 0 30px;
+	background: #F8F8F8;
+	border-radius: 0;
+	border: none;
+	outline: none;
+	font-family: 'basis_grotesque_proregular';
+	font-size: 18px;
+	color: #3F2355;
+	text-align: left;
+	text-decoration: none;
+	height: 90px;
+	width: 100%;
+}
+.ListLocation-Form i {
+    color: #A3A3A3;
+    font-size: 24px;
+    position: absolute;
+    left: 10px;
+    top: 32px;
+    z-index: 99;
+}
+.ListLocation-Form button{
+	margin: 0;
+    padding: 8px 20px;
+    background: #FB5100;
+    border-radius: 6px;
+    border: none;
+    outline: none;
+    font-family: 'basis_grotesque_probold';
+    font-weight: bold;
+    font-size: 18px;
+    text-align: center;
+    text-decoration: none;
+    color: #FFFFFF;
+    position: absolute;
+    right: 20px;
+    top: 24px;
+    -webkit-transition: all ease-in 0.3s;
+    -moz-transition: all ease-in 0.3s;
+    -o-transition: all ease-in 0.3s;
+    transition: all ease-in 0.3s;
+}
+.ListLocation-Form button::before{
+	color: #fff;
+    font-size: 20px;
+    text-align: left;
+    content: '\e810';
+    font-family: 'fontello';
+    margin: 0 8px 0 0px;
+}
+.ListLocation-Form button:hover,
+.ListLocation-Form button:focus{
+	background: #3F2355;
+}
+.ShopType-Btn{
+	margin: 0 0 60px 0;
+	padding: 0;
+}
+.ShopType-Btn h1{
+	margin: 0 0 20px 0;
+	padding: 0;
+	font-family: 'basis_grotesque_probold';
+	font-size: 20px;
+	text-align: left;
+	text-decoration: none;
+	color: #3F2355;
+}
+.ShopType-Btn a{
+	margin: 0 10px 15px 0px;
+	padding: 8px 30px;
+	background: #3F2355;
+	border-radius: 10px;
+	border: none;
+	outline: none;
+	font-family: 'basis_grotesque_probold';
+	font-size: 14px;
+	text-align: center;
+	text-decoration: none;
+	color: #FFFFFF;
+	display: inline-block;
+	-webkit-transition: all ease-in 0.3s;
+    -moz-transition: all ease-in 0.3s;
+    -o-transition: all ease-in 0.3s;
+    transition: all ease-in 0.3s;
+}
+.ShopType-Btn a:hover,
+.ShopType-Btn a:focus,
+.ShopType-Btn a:active{
+	background: #FB5100;
+}
+.SortBay-Menu{
+	margin: 40px 0 0 0;
+	padding: 0;
+	float: right;
+	position: relative;
+}
+.SortBay-Menu h1{
+	margin: 0 10px 0 0px;
+	padding: 0;
+	font-family: 'basis_grotesque_probold';
+	font-size: 18px;
+	text-align: left;
+	text-decoration: none;
+	color: #3F2355;
+	line-height: 25px;
+	display: inline-block;
+}
+.SortBay-Menu select{
+	margin: 0;
+	padding: 0 0 0 10px;
+	background: #fff;
+	border: 1px solid #3F2355;
+	border-radius: 5px;
+	outline: none;
+	font-family: 'basis_grotesque_proregular';
+	font-size: 16px;
+	color: #3F2355;
+	text-align: center;
+	text-decoration: none;
+	display: inline-block;
+	width: 140px;
+	height: 45px;
+	-webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+}
+.SortBay-Menu i{
+	margin: 0;
+    padding: 0;
+    color: #3F2355;
+    font-size: 8px;
+    position: absolute;
+    right: 15px;
+    top: 16px;
+    z-index: 99;
+}
+.ListGrid-Icon{
+	margin: 40px 40px 0 0px;
+    padding: 0;
+    background: #E6E6E6;
+    border-radius: 8px;
+    height: 44px;
+    width: 94px;
+    display: flex;
+    align-items: center;
+    float: right;
+	position: relative;
+}
+.ListGrid-Icon a{
+	margin: 0 10px;
+    padding: 0;
+    background: #E6E6E6;
+    text-decoration: none;
+    outline: none;
+    display: inline-block;
+    width: 42px;
+    height: 42px;
+    line-height: 40px;
+}
+.ListGrid-Icon a i{
+	margin: 0;
+	padding: 0;
+	color: rgba(63,35,85, 0.3);
+	font-size: 16px;
+	text-align: center;
+	-webkit-transition: all ease-in 0.3s;
+    -moz-transition: all ease-in 0.3s;
+    -o-transition: all ease-in 0.3s;
+    transition: all ease-in 0.3s;
+}
+.ListGrid-Icon a:after{
+	width: 1px;
+    height: 28px;
+    background: rgba(63,35,85, 0.3);
+    content: '';
+    display: inline-block;
+    position: absolute;
+    left: 43px;
+    top: 8px;
+}
+.ListGrid-Icon a:hover i,
+.ListGrid-Icon a.active i{
+	color: #3F2355;
+}
+.LeftMenu-Container{
+	margin: 0;
+	padding: 30px 30px 100px 30px;
+	background: rgba(255, 255, 255, 0.01);
+	box-shadow: 30px 20px 74px rgba(18, 31, 69, 0.04);
+}
+.Filter-Head{
+	margin: 0;
+	padding: 0;
+}
+.Filter-Head h1,
+.Filter-Head h1 span{
+	margin: 0;
+	padding: 0;
+	font-family: 'basis_grotesque_proregular';
+	font-size: 20px;
+	text-align: left;
+	text-decoration: none;
+	color: #3F2355;
+	line-height: 20px;
+	display: inline-block;
+}
+.Filter-Head button{
+	background: none;
+	outline: none;
+	border-radius: 0;
+	float: right;
+	border: none;
+	text-decoration: underline;
+	font-family: 'basis_grotesque_proregular';
+	font-size: 20px;
+	text-align: left;
+	color: #3F2355;
+	margin: 0;
+	padding: 0;
+	-webkit-transition: all ease-in 0.3s;
+    -moz-transition: all ease-in 0.3s;
+    -o-transition: all ease-in 0.3s;
+    transition: all ease-in 0.3s;
+}
+.Filter-Head button:hover{
+	color: #FB5100;
+}
+.FilterList{
+	margin: 30px 0 20px 0;
+	padding: 0;
+}
+.FilterList ul{
+	margin: 0;
+	padding: 0;
+}
+.FilterList ul li{
+	margin: 0 0 10px 0;
+	padding: 0;
+	list-style: none;
+	display: inline-block;
+}
+.FilterList ul li a{
+	margin: 0;
+    padding: 6px 14px;
+    background: #3F2355;
+    border-radius: 10px;
+    border: none;
+    outline: none;
+    font-family: 'basis_grotesque_proregular';
+    font-size: 18px;
+    text-align: left;
+    text-decoration: none;
+    color: #FFFFFF;
+    display: inline-block;
+    -webkit-transition: all ease-in 0.3s;
+    -moz-transition: all ease-in 0.3s;
+    -o-transition: all ease-in 0.3s;
+    transition: all ease-in 0.3s;
+}
+.FilterList ul li a i{
+	margin: 0 0 0 10px;
+	padding: 0;
+	color: #fff;
+	font-size: 15px;
+	text-align: right;
+}
+.FilterList ul li a:hover{
+	background: #FB5100;
+}
+.LeftMenu-Container .card-header {
+    padding: 0;
+    margin-bottom: 0;
+    background: none;
+    border-bottom: 1px solid #ccc;
+}
+.LeftMenu-Container .card{
+	border: none;
+    border-radius: 0;
+}
+.LeftMenu-Container .accordion>.card>.card-header {
+    border-radius: 0;
+    margin-bottom: 0px;
+}
+.LeftMenu-Container .card-header h2 button{
+	margin: 0;
+	padding: 15px 0;
+	background: #fff;
+	border-radius: 0;
+	font-size: 20px;
+	font-family: 'basis_grotesque_proregular';
+	text-align: left;
+	text-decoration: none;
+	color: #3F2355;
+}
+.LeftMenu-Container .card-header h2 button:focus,
+.LeftMenu-Container .card-header h2 button:active{
+	box-shadow: none;
+}
+.LeftMenu-Container .card .card-header .btn-link::after{
+	content: "\f107";
+	font-family: 'FontAwesome';
+	float: right;
+	font-size: 20px;
+	color: #3F2355;
+}
+.LeftMenu-Container .card .card-header .btn-link.collapsed::after{
+	content: "\f106";
+}
+.LeftMenu-Container .card-body{
+	padding: 0 0 30px 0;
+}
+.MonthlyPay-Container{
+	margin: 20px 0 20px -1px;
+	padding: 0;
+	border: 1px solid #3F2355;
+	border-radius: 12px;
+	overflow: hidden;
+}
+.MonthlyPay-Container a{
+	margin: 0;
+    padding: 11px 0px;
+    border-radius: 0px;
+    font-family: 'basis_grotesque_proregular';
+    font-size: 17px;
+    color: #3F2355;
+    text-align: center;
+    text-decoration: none;
+    background: #fff;
+    border: none;
+    outline: none;
+    width: 49%;
+    float: left;
+    -webkit-transition: all ease-in 0.3s;
+    -moz-transition: all ease-in 0.3s;
+    -o-transition: all ease-in 0.3s;
+    transition: all ease-in 0.3s;
+}
+.MonthlyPay-Container a:first-child{
+	border-radius: 8px 0 0 8px;
+}
+.MonthlyPay-Container a:last-child{
+	border-radius: 0px 8px 8px 0px;
+}
+.MonthlyPay-Container a.active,
+.MonthlyPay-Container a:hover{
+	background: #3F2355;
+	color: #fff;
+}
+.MonthlyPay-Form{
+	margin: 0;
+	padding: 0;
+}
+.MonthlyPay-Form label{
+	margin: 0 0 5px 0;
+	padding: 0;
+	font-family: 'basis_grotesque_proregular';
+	font-size: 18px;
+	text-align: left;
+	text-decoration: none;
+	color: rgba(63, 35, 85, 0.7);
+}
+.MonthlyPay-Form select{
+	margin: 0;
+	padding: 0;
+	font-family: 'basis_grotesque_proregular';
+	font-size: 18px;
+	text-align: left;
+	text-decoration: none;
+	color: #3F2355;
+	background: #fff;
+	border-radius: 0;
+	border-bottom: 1px solid #ccc;
+	border-left: none;
+	border-right: none;
+	border-top: none;
+	width: 100%;
+	height: 30px;
+	transform: matrix(1, 0, 0.03, 1, 0, 0);
+	-webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+}
+.Vechicle-image{
+	margin: 30px 0 0 0;
+	padding: 0;
+}
+.Vechicle-image img{
+	margin: 0;
+	padding: 0;
+	max-width: 100%;
+	height: 60px;
+}
+.Vechicle-image h4,
+.Vechicle-image h4 span{
+	margin: 10px 0 0 0;
+	padding: 0;
+	font-family: 'basis_grotesque_proregular';
+	font-size: 18px;
+	text-align: center;
+	text-decoration: none;
+	color: #3F2355;
+}
+.MakeMenu{
+	margin: 0;
+	padding: 0;
+}
+.MakeMenu a{
+	margin: 0;
+	padding: 20px 0;
+	font-family: 'basis_grotesque_probold';
+	font-size: 18px;
+	text-decoration: none;
+	text-align: left;
+	outline: none;
+	color: #3F2355;
+	display: block;
+	-webkit-transition: all ease-in 0.3s;
+    -moz-transition: all ease-in 0.3s;
+    -o-transition: all ease-in 0.3s;
+    transition: all ease-in 0.3s;
+}
+.MakeMenu a span{
+	font-family: 'basis_grotesque_proregular';
+}
+.MakeMenu a:before{
+	font-size: 15px;
+	color: #3F2355;
+	content: "\f00c";
+	display: inline-block;
+	font-family: 'FontAwesome';
+}
+.MakeMenu a.collapsed:before{
+	color: #fff ;
+}
+.MakeMenu-List{
+	margin: 0;
+	padding: 0;
+}
+.MakeMenu-List h1{
+	margin: 0;
+	padding: 10px 15px ;
+	background: #F7F7F9;
+	border: 0.2px solid rgba(63, 35, 85, 0.4);
+	font-family: 'basis_grotesque_proregular';
+	font-size: 18px;
+	text-align: left;
+	text-decoration: none;
+	text-transform: uppercase;
+	outline: none;
+	color: #3F2355;
+}
+.MakeMenu-List ul{
+	margin: 0;
+	padding: 0;
+}
+.MakeMenu-List ul li{
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+.MakeMenu-List ul li a{
+	margin: 0;
+	padding: 15px 40px;
+	font-family: 'basis_grotesque_probold';
+    font-size: 18px;
+    text-decoration: none;
+    text-align: left;
+    outline: none;
+    color: #3F2355;
+    display: block;
+    -webkit-transition: all ease-in 0.3s;
+    -moz-transition: all ease-in 0.3s;
+    -o-transition: all ease-in 0.3s;
+    transition: all ease-in 0.3s;
+}
+.MakeMenu-List ul li a span{
+	font-family: 'basis_grotesque_proregular';
+}
+.TransContainer {
+  	display: block;
+    position: relative;
+    padding-left: 50px;
+    padding-top: 10px;
+    margin-bottom: 20px;
+    cursor: pointer;
+    font-size: 18px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    font-family: 'basis_grotesque_proregular';
+    color: #3F2355;
+}
+.TransContainer input {
+  	position: absolute;
+  	opacity: 0;
+  	cursor: pointer;
+  	height: 0;
+  	width: 0;
+}
+.TransCheckmark {
+  	position: absolute;
+    top: 0;
+    left: 0;
+    height: 40px;
+    width: 40px;
+    background-color: #fff;
+    border-radius: 12px;
+    border: 2px solid #3F2355;
+	-webkit-transition: all ease-in 0.3s;
+    -moz-transition: all ease-in 0.3s;
+    -o-transition: all ease-in 0.3s;
+    transition: all ease-in 0.3s;
+}
+.TransContainer:hover input ~ .TransCheckmark {
+  	background-color: #3F2355;
+}
+.TransContainer input:checked ~ .TransCheckmark {
+  	background-color: #3F2355;
+}
+.TransCheckmark:after {
+  	content: "";
+  	position: absolute;
+  	display: none;
+}
+.TransContainer input:checked ~ .TransCheckmark:after {
+  	display: block;
+}
+.TransContainer .TransCheckmark:after {
+  	left: 14px;
+    top: 9px;
+    width: 7px;
+    height: 15px;
+    border: solid white;
+    border-width: 0 3px 3px 0;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg)
+}
+.Trans-Btn{
+	margin: 30px 0 0 0;
+	padding: 0;
+}
+.ProdThum-Service{
+	margin: 0 0 30px 0;
+	padding: 0;
+	position: relative;
+	background: #fff;
+	border: 0.5px solid #E6E6E6;
+	border-radius: 16px;
+	overflow: hidden;
+	-webkit-transition: all ease-in 0.3s;
+    -moz-transition: all ease-in 0.3s;
+    -o-transition: all ease-in 0.3s;
+    transition: all ease-in 0.3s;
+}
+.ProdThum-Service .ProdImage{
+	margin: 0;
+	padding: 0;
+	position: relative;
+}
+.ProdThum-Service .ProdImage img{
+	margin: 0;
+	padding: 0;
+	max-width: 100%;
+	height: auto;
+}
+.ProdThum-Service .IconBadge{
+	margin: 0 auto;
+    padding: 0;
+    background: #fff;
+    border-radius: 50px;
+    width: 42px;
+    height: 42px;
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    z-index: 99;
+	text-align: center;
+}
+.ProdThum-Service .IconBadge i{
+	margin: 0;
+    padding: 0;
+    color: #3F2355;
+    font-size: 24px;
+    text-align: center;
+    line-height: 44px;
+}
+.ProdThum-Service .ProdHead{
+	margin: 0;
+	padding: 0;
+}
+.ProdThum-Service .ProdHead h1{
+	margin: 0;
+	padding: 15px 0px 0 15px;
+	font-family: 'basis_grotesque_probold';
+	font-size: 24px;
+	color: #3F2355;
+	text-align: left;
+	text-decoration: none;
+	float: left;
+}
+.ProdThum-Service .ProdHead h1 img{
+	margin: 0 8px 0 0px;
+	padding: 0;
+	max-width: 100%;
+	height: 30px;
+	float: left;
+}
+.ProdThum-Service .ProdHead img{
+	margin: 0;
+	padding: 15px 15px 0 0px;
+	max-width: 100%;
+	height: 45px;
+	float: right;
+}
+.ProdThum-Service .ProdHead h2{
+	margin: 0;
+	padding: 20px 0px 20px 15px;
+	font-family: 'basis_grotesque_proregular';
+	font-size: 18px;
+	color: #3F2355;
+	text-align: left;
+	text-decoration: none;
+}
+.ProdThum-Service .ProdHead h3{
+	margin: 0;
+	padding: 0 0 15px 15px;
+	color: #5B5B5C;
+	font-family: 'basis_grotesque_proregular';
+	font-size: 13px;
+	text-align: left;
+	text-decoration: none;
+	float: left;
+}
+.ProdThum-Service .ProdHead h3 i{
+	margin: 0;
+	padding: 0;
+	background: #F1F3F5;
+	border-radius: 50px;
+	height: 30px;
+	width: 30px;
+	font-size: 20px;
+	color: #3F2355;
+	text-align: center;
+	line-height: 30px;
+}
+.ProdThum-Service .ProdHead h4{
+	margin: 0;
+	padding: 6px 15px 15px 0px;
+	color: #5B5B5C;
+	font-family: 'basis_grotesque_proregular';
+	font-size: 13px;
+	text-align: left;
+	text-decoration: none;
+	float: right;
+	line-height: 24px;
+}
+.ProdThum-Service .ProdHead h4 img{
+	margin: 0 6px 0 0px;
+	padding: 0;
+	max-width: 100%;
+	height: 20px;
+	float: left;
+}
+.ProdThum-Service:hover{
+	box-shadow: 25px 30px 79px rgba(38, 47, 86, 0.1);
+}
+.ProdThum-Service .owl-theme .owl-nav,
+.ListView-Container .owl-theme .owl-nav,
+.LargeImage-Container .owl-theme .owl-nav{
+	position: absolute;
+    top: 50px;
+    right: 0;
+    left: 0;
+    z-index: 99;
+}
+.ProdThum-Service .owl-theme .owl-nav .disabled,
+.ListView-Container .owl-theme .owl-nav .disabled,
+.LargeImage-Container .owl-theme .owl-nav .disabled{
+    opacity: 1;
+    cursor: default;
+}
+.ProdThum-Service .owl-theme .owl-nav .owl-prev i,
+.ListView-Container .owl-theme .owl-nav .owl-prev i,
+.LargeImage-Container .owl-theme .owl-nav .owl-prev i{
+	color: #fff;
+    font-size: 40px;
+    background: none;
+    outline: none;
+    margin-left: 10px;
+    position: absolute;
+    left: 10px;
+    z-index: 99;
+}
+.ProdThum-Service .owl-theme .owl-nav .owl-next i,
+.ListView-Container .owl-theme .owl-nav .owl-next i,
+.LargeImage-Container .owl-theme .owl-nav .owl-next i{
+	color: #fff;
+    font-size: 40px;
+    background: none;
+    outline: none;
+    margin-left: 10px;
+    position: absolute;
+    right: 10px;
+    z-index: 99;
+}
+.ListView-Container{
+	margin: 0 0 30px 0;
+	padding: 0;
+	background: #fff;
+	border-radius: 4px 0px 0px 4px;
+	border: 0.5px solid #E6E6E6;
+	filter: drop-shadow(0px 7px 10px rgba(0, 0, 0, 0.06));
+	overflow: hidden;
+}
+.ListView-Container .ImageSlider{
+	margin: 0;
+	padding: 0;
+}
+.ListView-Container .ImageSlider img{
+	margin: 0;
+	padding: 0;
+	max-width: 100%;
+	height: auto;
+}
+.ListView-Container .ListView-Head{
+	margin: 0;
+	padding: 0;
+}
+.ListView-Container .ListView-Head h1{
+	margin: 0;
+    padding: 15px 0px 0 0px;
+    font-family: 'basis_grotesque_probold';
+    font-size: 24px;
+    color: #3F2355;
+    text-align: left;
+    text-decoration: none;
+}
+.ListView-Container .ListView-Head h1 img{
+	margin: 0;
+	padding: 0;
+	max-width: 100%;
+	height: 30px;
+}
+.ListView-Container .ListView-Head h2{
+	margin: 0;
+    padding: 25px 0px 20px 0px;
+    font-family: 'basis_grotesque_proregular';
+    font-size: 18px;
+    color: #3F2355;
+    text-align: left;
+    text-decoration: none;
+}
+.ListView-Container .ListView-Btm{
+	margin: 50px 0 0 0;
+	padding: 0;
+}
+.ListView-Container .ListView-Btm ul{
+	margin: 0;
+	padding: 0;
+}
+.ListView-Container .ListView-Btm ul li{
+	margin: 0 50px 0 0px;
+	padding: 0;
+	list-style: none;
+	float: left;
+}
+.ListView-Container .ListView-Btm ul li h1,
+.ListView-Container .ListView-Btm ul li h2{
+	margin: 0;
+    padding: 0px;
+    color: #5B5B5C;
+    font-family: 'basis_grotesque_proregular';
+    font-size: 15px;
+    text-align: left;
+    text-decoration: none;
+	display: inline-block;
+}
+.ListView-Container .ListView-Btm ul li h1 i{
+	margin: 0;
+    padding: 0;
+    background: #F1F3F5;
+    border-radius: 50px;
+    height: 30px;
+    width: 30px;
+    font-size: 20px;
+    color: #3F2355;
+    text-align: center;
+    line-height: 30px;
+}
+.ListView-Container .ListView-Btm ul li h2 img{
+	margin: 0;
+	padding: 0;
+	height: 28px;
+	max-width: 100%;
+}
+.ListView-Container .ListView-Btm ul li h2 span{
+	margin: 0;
+    padding: 0;
+    position: relative;
+    top: 6px;
+    left: 6px;
+}
+.ListView-Container .ListView-Btm ul li h3{
+	margin: 0;
+    padding: 0px;
+    color: #5B5B5C;
+    font-family: 'basis_grotesque_probold';
+    font-size: 15px;
+    text-align: left;
+    text-decoration: none;
+	display: inline-block;
+}
+.ListView-Container .ListView-Btm ul li h3 img{
+	margin: 0;
+	padding: 0;
+	max-width: 100%;
+	height: 30px;
+}
+.ListView-Container .ListView-Btm ul li h3 span{
+	position: relative;
+	top: 3px;
+	left: 6px;
+}
+.ListView-Container .ListRight-Image{
+	margin: 0;
+	padding: 0;
+}
+.ListView-Container .ListRight-Image i{
+	margin: 20px 20px 0 0px;
+    padding: 0;
+    background: #F8F8F8;
+    width: 38px;
+    height: 38px;
+    color: #3F2355;
+    font-size: 20px;
+    text-align: center;
+    line-height: 40px;
+    border-radius: 30px;
+    float: right;
+}
+.ListView-Container .ListRight-Image img{
+	margin: 100px 20px 0 0px;
+    padding: 0;
+    max-width: 100%;
+    height: auto;
+    float: right;
+}
+
+
+/*--------------------------------------------------------------
+# Listing Page Css3 End
+--------------------------------------------------------------*/
+
+
+/*--------------------------------------------------------------
+# Register Page Css3 Start
+--------------------------------------------------------------*/
+
+.RegisterBtn{
+	margin: 0;
+	padding: 0;
+	float: right;
+}
+.RegisterBtn a{
+	margin: 6px 0 0 15px;
+    padding: 10px 30px;
+    font-family: 'basis_grotesque_proregular';
+    font-size: 16px;
+    text-align: center;
+    text-decoration: none;
+    color: #5D5858;
+    background: #fff;
+    border-radius: 50px;
+    outline: none;
+    border: none;
+    display: inline-block;
+    -webkit-transition: all ease-in 0.3s;
+    -moz-transition: all ease-in 0.3s;
+    -o-transition: all ease-in 0.3s;
+    transition: all ease-in 0.3s;
+}
+.RegisterBtn a:hover,
+.RegisterBtn a:active,
+.RegisterBtn a:focus,
+.RegisterBtn a.active{
+	background: #F9D9CC;
+	color: #FB5100;
+}
+.RegisterAccount-Container{
+	margin: 0;
+	padding: 0;
+}
+.Register-Head{
+	margin: 0 0 40px 0;
+	padding: 0;
+}
+.Register-Head h1{
+	margin: 0 0 16px 0;
+	padding: 0;
+	font-family: 'basis_grotesque_probold';
+	font-size: 28px;
+	text-align: left;
+	text-decoration: none;
+	color: #3F2355;
+}
+.Register-Head p{
+	margin: 0;
+	padding: 0;
+	font-family: 'basis_grotesque_proregular';
+	font-size: 22px;
+	text-align: left;
+	text-decoration: none;
+	color: #3F2355;
+}
+.DealerHead{
+	margin: 0 0 70px 0;
+	padding: 0;
+}
+.DealerHead h3{
+	margin: 0;
+	padding: 0;
+	font-family: 'basis_grotesque_probold';
+    font-size: 28px;
+    text-align: left;
+    text-decoration: none;
+    color: #3F2355;
+}
+.DealerHead p{
+	margin: 0;
+	padding: 0;
+	font-family: 'basis_grotesque_proregular';
+	font-size: 22px;
+	text-align: left;
+	text-decoration: none;
+	color: #3F2355;
+}
+.DealerHead p a{
+	font-family: 'basis_grotesque_probold';
+	background: none;
+	color: #3F2355;
+	border:none;
+	border-radius: 0;
+	padding: 0;
+	margin: 0;
+}
+.DealerHead p a:hover{
+	background: none;
+	color: #FB7333;
+}
+.DealerHead a{
+	margin: 30px 0px;
+    padding: 14px 35px;
+    background: #FB7333;
+    border-radius: 10px;
+    font-family: 'basis_grotesque_probold';
+    font-size: 17px;
+    text-align: center;
+    text-decoration: none;
+    color: #fff;
+    outline: none;
+    display: inline-block;
+    -webkit-transition: all ease-in 0.3s;
+    -moz-transition: all ease-in 0.3s;
+    -o-transition: all ease-in 0.3s;
+    transition: all ease-in 0.3s;
+}
+.DealerHead a:hover,
+.DealerHead a:active,
+.DealerHead a:focus{
+	background: #3F2355;
+}
+.Register-Form{
+	margin: 0 0 40px 0;
+	padding: 0;
+}
+.Register-Form label{
+	margin: 0 0 15px 0;
+	padding: 0;
+	font-family: 'basis_grotesque_proregular';
+	font-size: 18px;
+	text-align: left;
+	text-decoration: none;
+	color: #3F2355;
+}
+.Register-Form input{
+	margin: 0;
+	padding: 0 10px 0 20px;
+	background: #fff;
+	border: 1px solid #D4D0DD;
+	border-radius: 10px;
+	outline: none;
+	font-family: 'basis_grotesque_proregular';
+	font-size: 16px;
+	text-align: left;
+	text-decoration: none;
+	color: #565A75;
+	width: 100%;
+	height: 60px;
+}
+.Register-Form input::placeholder{
+	color: #565A75;
+}
+.ByClick-Head{
+	margin: 0;
+	padding: 0;
+}
+.ByClick-Head h4,
+.ByClick-Head h4 a{
+	margin: 0;
+    padding: 0;
+    font-family: 'basis_grotesque_proregular';
+    font-size: 18px;
+    text-align: left;
+    text-decoration: none;
+    color: #3F2355;
+	line-height: 30px;
+	-webkit-transition: all ease-in 0.3s;
+    -moz-transition: all ease-in 0.3s;
+    -o-transition: all ease-in 0.3s;
+    transition: all ease-in 0.3s;
+}
+.ByClick-Head h4 a:hover{
+	color: #FB7333;
+}
+.ByClick-Head h4 a{
+	font-family: 'basis_grotesque_probold';
+}
+.CreatAccount-Btn{
+	margin: 50px 0 50px 0;
+	padding: 0;
+}
+.CreatAccount-Btn button{
+	margin: 0;
+	padding: 14px 0;
+	background: #FB7333;
+	border-radius: 10px;
+	outline: none;
+	border:none;
+	font-family: 'basis_grotesque_probold';
+	font-size: 18px;
+	text-align: center;
+	text-decoration: none;
+	color: #FFFFFF;
+	display: inline-block;
+	width: 25%;
+	-webkit-transition: all ease-in 0.3s;
+    -moz-transition: all ease-in 0.3s;
+    -o-transition: all ease-in 0.3s;
+    transition: all ease-in 0.3s;
+}
+.CreatAccount-Btn span{
+	margin: 0 0 0 20px;
+	padding: 0;
+	font-family: 'basis_grotesque_probold';
+	font-size: 20px;
+	text-align: center;
+	text-decoration: none;
+	color: #3F2355;
+	display: inline-block;
+}
+.CreatAccount-Btn button:hover,
+.CreatAccount-Btn button:focus,
+.CreatAccount-Btn button:active{
+	background: #3F2355;
+}
+.LoginSocial-Btm{
+	margin: 0 auto 40px auto;
+	padding: 8px;
+	background: #FFFFFF;
+	border: 0.5px solid #E5E5E5;
+	box-sizing: border-box;
+	border-radius: 10px;
+	text-align: center;
+}
+.LoginSocial-Btm img{
+	margin: 0;
+	padding: 0;
+	max-width: 100%;
+	height: 30px;
+	display: inline-block;
+}
+.LoginSocial-Btm h1{
+	margin: 0 0 0 5px;
+	padding: 0;
+	color: #3F2355;
+	font-family: 'basis_grotesque_proregular';
+	font-size: 15px;
+	text-align: left;
+	text-decoration: none;
+	line-height: 20px;
+	display: inline-block;
+}
+.Register-Imageright{
+	margin: 0;
+	padding: 0;
+}
+.Register-Imageright h5{
+	margin: 0;
+    padding: 0;
+    font-family: 'freightdispproblauploadedfile';
+    font-size: 45px;
+    text-align: left;
+    text-decoration: none;
+    color: #3F2355;
+    line-height: 50px;
+}
+.Register-Imageright img{
+	margin: 50px 0 0 0;
+	padding: 0;
+	max-width: 100%;
+	height: auto;
+}
+.Register-Footer{
+	margin: 0;
+	padding: 25px 0 25px 0;
+	background: #F5F7FA;
+}
+.SignIn-CopyRight{
+	margin: 0;
+	padding: 0;
+}
+.SignIn-CopyRight h2,
+.SignIn-CopyRight h3{
+	margin: 0;
+	padding: 0;
+	font-family: 'basis_grotesque_proregular';
+	font-size: 18px;
+	text-align: left;
+	text-decoration: none;
+	color: #3F2355;
+	line-height: 20px;
+}
+.SignIn-CopyRight h3{
+	float: left;
+}
+.forgetpass{
+	margin: 15px 0 0 0;
+	padding: 0;
+	float: right;
+}
+.forgetpass a{
+	margin: 0;
+	padding: 0;
+	color: #2F80ED;
+	font-family: 'basis_grotesque_proregular';
+	font-size: 14px;
+	text-align: right;
+	text-decoration: none;
+	outline: none;
+	-webkit-transition: all ease-in 0.3s;
+    -moz-transition: all ease-in 0.3s;
+    -o-transition: all ease-in 0.3s;
+    transition: all ease-in 0.3s;
+}
+
+
+/*--------------------------------------------------------------
+# Register Page Css3 End
+--------------------------------------------------------------*/
+
+
+/*--------------------------------------------------------------
+# Dealer Information Register Page Css3 Start
+--------------------------------------------------------------*/
+
+.Section-DealerInfo{
+	margin: 0;
+	padding: 0;
+}
+.DealerInfo-List{
+	margin: 0;
+	padding: 100px 0 0 0;
+}
+.DealerInfo-List::after{
+	display: block;
+	content: '';
+	clear: both;
+}
+.DealerInfo-List ul{
+	margin: 0;
+	padding: 0;
+}
+.DealerInfo-List ul li{
+	margin: 0 10px 0 0px;
+	padding: 0;
+	list-style: none;
+	display: inline-block;
+}
+.DealerInfo-List ul li a{
+	margin: 0;
+	padding: 0;
+	font-family: 'basis_grotesque_probold';
+	color: #3F2355;
+	font-size: 18px;
+	text-align: center;
+	text-decoration: none;
+	background: #AFA5BB;
+	border-radius: 50px;
+	height: 45px;
+	width: 45px;
+	outline: none;
+	line-height: 45px;
+	position: relative;
+	display: inline-block;
+	-webkit-transition: all ease-in 0.3s;
+    -moz-transition: all ease-in 0.3s;
+    -o-transition: all ease-in 0.3s;
+    transition: all ease-in 0.3s;
+}
+.DealerInfo-List ul li.active a{
+    background: #81DB0F;
+    display: inline-block;
+    height: 45px;
+    width: 45px;
+    border-radius: 50%;
+	color: #81DB0F;
+}
+.DealerInfo-List ul li.active a::after{
+	position: absolute;
+    left: 0;
+    right: 0;
+    z-index: 99;
+    color: #FFFFFF;
+    font-family: 'FontAwesome';
+    content: "\f00c";
+    text-align: center;
+    font-size: 20px;
+}
+.DealerInfo-List ul li h1{
+	margin: 0;
+	padding: 0;
+	font-family: 'basis_grotesque_probold';
+	color: #3F2355;
+	font-size: 18px;
+	text-align: center;
+	text-decoration: none;
+}
+.DealerHead{
+	margin: 0;
+	padding: 70px 0 50px 0;
+}
+.DealerHead h4{
+	margin: 0;
+	padding: 0;
+	font-family: 'basis_grotesque_proregular';
+	font-size: 22px;
+	text-align: left;
+	text-decoration: none;
+	color: #3F2355;
+	line-height: 25px;
+}
+.DealerForm{
+	margin: 0 0 50px 0;
+	padding: 0;
+	position: relative;
+}
+.DealerForm label{
+	margin: 0 0 15px 0;
+    padding: 0;
+    font-family: 'basis_grotesque_proregular';
+    font-size: 18px;
+    text-align: left;
+    text-decoration: none;
+    color: #3F2355;
+}
+.DealerForm input,
+.DealerForm select{
+	margin: 0;
+    padding: 0 10px 0 20px;
+    background: #fff;
+    border: 1px solid #D4D0DD;
+    border-radius: 10px;
+    outline: none;
+    font-family: 'basis_grotesque_proregular';
+    font-size: 16px;
+    text-align: left;
+    text-decoration: none;
+    color: #565A75;
+    width: 100%;
+    height: 60px;
+}
+.DealerForm select{
+	-webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+	position: relative;
+}
+.DealerForm input::placeholder{
+	color: #565A75;
+}
+.DealerForm button{
+	margin: 0;
+	padding: 0;
+	background: #E6E6E6;
+	border-radius: 10px;
+	border: none;
+	outline: none;
+	width: 250px;
+	height: 60px;
+	font-family: 'basis_grotesque_probold';
+	font-size: 18px;
+	color: #644E77;
+	text-align: center;
+	text-decoration: none;
+	-webkit-transition: all ease-in 0.3s;
+    -moz-transition: all ease-in 0.3s;
+    -o-transition: all ease-in 0.3s;
+    transition: all ease-in 0.3s;
+}
+.DealerForm button:hover{
+	background: #FB7333;
+	color: #FFFFFF;
+}
+.DealerForm button:hover i{
+	color: #FFFFFF;
+}
+.DealerForm button i{
+	margin: 0 10px 0 10px;
+    padding: 0;
+    color: #644E77;
+    font-size: 25px;
+    position: relative;
+    top: 2px;
+}
+.DealerForm button.active{
+	background: #FB7333;
+	color: #FFFFFF;
+}
+.DealerForm button.active i{
+	color: #FFFFFF;
+}
+.DealerHead-Image{
+	margin: 0;
+	padding: 0;
+}
+.DealerHead-Image img{
+	margin: 0;
+	padding: 0;
+	max-width: 100%;
+	height: auto;
+}
+.ArrowDealer{
+	margin: 0;
+    padding: 0;
+    color: #3F2355;
+    font-size: 8px;
+    position: absolute;
+    right: 20px;
+    top: 66px;
+    z-index: 99;
+}
+.Section-DealerInfo .custom-file-label{
+	position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 1;
+    padding: 0 10px 0 60px;
+    line-height: 60px;
+    background-color: #fff;
+    border: 1px solid #D4D0DD;
+    border-radius: 10px;
+    font-size: 16px;
+    text-align: left;
+    text-decoration: none;
+    color: #565A75;
+    width: 100%;
+    height: 60px;
+    font-family: 'basis_grotesque_probold';
+}
+.Section-DealerInfo .custom-file-label::after {
+    position: absolute;
+    top: 10px;
+    left: 15px;
+    bottom: 0;
+    z-index: 3;
+    display: block;
+    height: 35px;
+	width: 35px;
+    padding: 0;
+    line-height: 1.5;
+    color: #897999;
+    content: "\f067";
+	font-family: 'FontAwesome';
+    border-left: inherit;
+    border-radius: 50px;
+    background: #D4D0DD;
+}
+.Section-DealerInfo .custom-file-input:lang(en)~.custom-file-label::after {
+    content: "\f067";
+    font-family: 'FontAwesome';
+    color: #897999;
+    text-align: center;
+    line-height: 35px;
+}
+.Section-DealerInfo .custom-file {
+    position: relative;
+    display: inline-block;
+    width: 100%;
+    height: 60px;
+    margin-bottom: 50px;
+}
+.Section-DealerInfo .custom-file-input {
+    position: relative;
+    z-index: 2;
+    width: 100%;
+    height: 60px;
+    margin: 0;
+    opacity: 0;
+}
+.UploadBtn-Head{
+	margin: 0;
+	padding: 0;
+}
+.UploadBtn-Head label{
+	margin: 0 0 15px 0;
+    padding: 0;
+    font-family: 'basis_grotesque_proregular';
+    font-size: 15px;
+    text-align: left;
+    text-decoration: none;
+    color: #3F2355;
+}
+.DealerBtn {
+  	display: block;
+    position: relative;
+    padding-left: 34px;
+    margin-bottom: 12px;
+	margin-top: 70px;
+    cursor: pointer;
+    font-size: 18px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    font-family: 'basis_grotesque_proregular';
+	color: #3F2355;
+}
+.DealerBtn input {
+  	position: absolute;
+  	opacity: 0;
+  	cursor: pointer;
+  	height: 0;
+  	width: 0;
+}
+.BtnMark {
+  	position: absolute;
+    top: 0;
+    left: 0;
+    height: 25px;
+    width: 25px;
+    background-color: #fff;
+    border: 1px solid #D4D0DD;
+    border-radius: 5px;
+	-webkit-transition: all ease-in 0.3s;
+    -moz-transition: all ease-in 0.3s;
+    -o-transition: all ease-in 0.3s;
+    transition: all ease-in 0.3s;
+}
+.DealerBtn:hover input ~ .BtnMark {
+  	background-color: #FB7333;
+	border: 1px solid #FB7333;
+}
+.DealerBtn input:checked ~ .BtnMark {
+  	background-color: #FB7333;
+	border: 1px solid #FB7333;
+}
+.BtnMark:after {
+  	content: "";
+  	position: absolute;
+  	display: none;
+}
+.DealerBtn input:checked ~ .BtnMark:after {
+  	display: block;
+}
+.DealerBtn .BtnMark:after {
+  	left: 9px;
+    top: 4px;
+    width: 6px;
+    height: 12px;
+    border: solid white;
+    border-width: 0 3px 3px 0;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+}
+.DealerPara-Head{
+	margin: 0 0 50px 0;
+	padding: 0;
+}
+.DealerPara-Head h3{
+	margin: 0;
+	padding: 0;
+	color: #3F2355;
+	font-size: 18px;
+	font-family: 'basis_grotesque_proregular';
+	text-align: left;
+	text-decoration: none;
+}
+
+
+/*--------------------------------------------------------------
+# Dealer Information Register Page Css3 End
+--------------------------------------------------------------*/
+
+
+/*--------------------------------------------------------------
+# List Detail Page Css3 Start
+--------------------------------------------------------------*/
+
+.Section-ListDetail{
+	margin: 50px 0 50px 0;
+	padding: 0;
+	position: relative;
+}
+.LargeImage-Container{
+	margin: 0;
+	padding: 0;
+}
+.ListDetail-Image{
+	margin: 0;
+	padding: 0;
+}
+.ListDetail-Image img{
+	margin: 0;
+	padding: 0;
+	max-width: 100%;
+	height: auto;
+	border-radius: 16px;
+}
+.ListDetail-Badge{
+	margin: 0 auto;
+    padding: 0;
+    background: #fff;
+    border-radius: 50px;
+    width: 42px;
+    height: 42px;
+    position: absolute;
+    top: 30px;
+    right: 40px;
+    z-index: 99;
+    text-align: center;
+}
+.ListDetail-Badge i{
+	margin: 0;
+    padding: 0;
+    color: #3F2355;
+    font-size: 24px;
+    text-align: center;
+    line-height: 44px;
+}
+.LargeImage-Container .owl-theme .owl-nav{
+	top: 50%;
+}
+.LargeImage-List{
+	margin: 20px 0 0 0;
+	padding: 0;
+}
+.LargeImage-List ul{
+	margin: 0;
+	padding: 0;
+}
+.LargeImage-List ul li{
+	margin: 0 8px 20px 0px;
+	padding: 0;
+	list-style: none;
+	float: left;
+	width: 24%;
+}
+.LargeImage-List ul li img{
+	margin: 0;
+	padding: 0;
+	max-width: 100%;
+	height: auto;
+	border-radius: 16px;
+}
+.LargeRight-Image{
+	margin: 0;
+	padding: 0;
+}
+.LargeRight-Image h1{
+	margin: 0 0 16px 0;
+	padding: 0;
+	color: #3F2355;
+	font-family: 'basis_grotesque_proregular';
+	font-size: 34px;
+	text-align: left;
+	text-decoration: none;
+	line-height: 40px;
+}
+.LargeRight-Image h2{
+	margin: 0 0 10px 0;
+	padding: 0;
+	color: #787878;
+	font-family: 'basis_grotesque_proregular';
+	font-size: 20px;
+	text-align: left;
+	text-decoration: none;
+	line-height: 25px;
+}
+.LargeRight-Image h3{
+	margin: 0;
+	padding: 0;
+	color: #787878;
+	font-family: 'basis_grotesque_proregular';
+	font-size: 16px;
+	text-align: left;
+	text-decoration: none;
+	line-height: 20px;
+}
+.LargeRight-Image h4{
+	margin: 20px 0 0 0;
+	padding: 0;
+	color: #3F2355;
+	font-family: 'basis_grotesque_probold';
+	font-size: 32px;
+	text-align: left;
+	text-decoration: none;
+	display: inline-block;
+}
+.LargeRight-Image h4 span{
+	margin: 0;
+    padding: 0;
+    color: #FB5100;
+    font-family: 'basis_grotesque_proregular';
+    font-size: 14px;
+    text-align: left;
+    text-decoration: none;
+    text-transform: uppercase;
+    position: relative;
+    top: -6px;
+}
+.LargeRight-Image h5{
+	margin: 0px 0 0 30px;
+    padding: 0;
+    color: #3F2355;
+    font-family: 'basis_grotesque_proregular';
+    font-size: 18px;
+    text-align: left;
+    text-decoration: none;
+    display: inline-block;
+    position: relative;
+    top: -5px;
+}
+.LargeRight-Image h5 img{
+	margin: 0 6px 0 0px;
+    padding: 0;
+    max-width: 100%;
+    height: auto;
+    position: relative;
+    top: -4px;
+}
+.LargeRight-Image h6{
+	margin: 25px 0 0 0px;
+    padding: 0;
+    color: #787878;
+    font-family: 'basis_grotesque_proregular';
+    font-size: 20px;
+    text-align: left;
+    text-decoration: none;
+}
+.LargeRight-Image h6 img{
+	margin: 0 0px 0 10px;
+    padding: 0;
+    max-width: 100%;
+    height: auto;
+    position: relative;
+    top: -4px;
+    width: 75px;
+}
+.FinanceThat-Container{
+	margin: 50px 0 0 0;
+	padding: 0;
+}
+.FinanceThat-Container .ServiceOne{
+	margin: 0;
+	padding: 0;
+	display: inline-block;
+}
+.FinanceThat-Container .ServiceOne a{
+	margin: 0;
+    padding: 12px 24px;
+    background: #FB5100;
+    border-radius: 12px;
+    border: none;
+    outline: none;
+    font-family: 'basis_grotesque_probold';
+    font-size: 18px;
+    text-align: left;
+    text-decoration: none;
+    color: #FFFFFF;
+    display: inline-block;
+}
+.FinanceThat-Container .ServiceOne a img{
+	margin: 0 5px 0 0px;
+    padding: 0;
+    max-width: 100%;
+    height: 24px;
+    position: relative;
+    top: -2px;
+}
+.FinanceThat-Container .ServiceTwo{
+	margin: 0 auto 0 20px;
+    padding: 14px 16px;
+    display: inline-block;
+    position: relative;
+    background: #EAEAEB;
+    border-radius: 12px;
+    border: none;
+    outline: none;
+    text-align: center;
+}
+.FinanceThat-Container .ServiceTwo img{
+	margin: 0;
+    padding: 0;
+    max-width: 100%;
+    height: 22px;
+}
+.AsideMenu-Container{
+	margin: 30px 0 0 0;
+	padding: 0;
+	background: #fff;
+	border: 0.5px solid #AAABAD;
+	box-sizing: border-box;
+	border-radius: 10px;
+	overflow: hidden;
+}
+.OverViewListing{
+	margin: 0;
+	padding: 0;
+}
+.OverViewListing h1{
+	margin: 0;
+    padding: 12px 20px;
+    background: #F5F7FA;
+    border-radius: 10px 10px 0 0px;
+    font-family: 'basis_grotesque_proregular';
+    font-size: 24px;
+    text-align: left;
+    text-decoration: none;
+    color: #3F2355;
+}
+.OverViewListing ul{
+	margin: 0;
+	padding: 0;
+}
+.OverViewListing ul li{
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	border-bottom: 1px solid #AAABAD;
+}
+.OverViewListing ul li:last-child{
+	border-bottom: none;
+}
+.OverView-Container{
+	margin: 0;
+	padding: 20px 20px;
+}
+.OverView-Container::after{
+	clear: both;
+	display: block;
+	content: '';
+}
+.OverView-Container .OverView-Left,
+.OverView-Container .OverView-Right{
+	margin: 0;
+	padding: 0;
+	float: left;
+	width: 50%;
+}
+.OverView-Container .OverView-Left img,
+.OverView-Container .OverView-Right img{
+	margin: 0;
+	padding: 0;
+	max-width: 100%;
+	height: auto;
+	float: left;
+}
+.OverView-Container .OverView-Left h3,
+.OverView-Container .OverView-Left h2,
+.OverView-Container .OverView-Right h3,
+.OverView-Container .OverView-Right h2{
+	margin: 2px 0 0 6px;
+	padding: 0;
+	font-family: 'basis_grotesque_proregular';
+	font-size: 20px;
+	text-align: left;
+	text-decoration: none;
+	color: #3F2355;
+	float: left;
+	width: 30%;
+}
+.OverView-Container .OverView-Left h2,
+.OverView-Container .OverView-Right h2{
+	color: #787878;
+	margin-left: 15px;
+}
+.OverView-Container .OverView-Right{
+	float: right;
+	padding-right: 0px;
+}
+.Description-Head{
+	margin: 15px 0 0 0;
+	padding: 0;
+}
+.Description-Head h2{
+	margin: 0;
+    padding: 12px 20px;
+    background: #F5F7FA;
+    border-radius: 0px;
+    font-family: 'basis_grotesque_proregular';
+    font-size: 24px;
+    text-align: left;
+    text-decoration: none;
+    color: #3F2355;
+}
+.Description-Head p{
+	margin: 0;
+    padding: 20px 20px;
+    font-family: 'basis_grotesque_proregular';
+    font-size: 14px;
+    text-align: left;
+    color: #3F2355;
+    line-height: 24px;
+}
+
+
+
+
+
+/*--------------------------------------------------------------
+# List Detail Page Css3 End
+--------------------------------------------------------------*/
+
+
+
+
